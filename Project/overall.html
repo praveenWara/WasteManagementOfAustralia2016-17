@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="description"	content="Data Visualisation Project"/>
+		<meta name="Keywords"		content="HTML, CSS, D3"/>
+		<meta name="author"			content="Praveen Waragoda 101243288"/>
+		
+		
+		<title> Waste Generation and Management Statistics of Australia 2017-18</title>
+		
+		<link rel="stylesheet" type="text/css" href="world.css">
+		<script src="https://d3js.org/d3.v4.js"></script>
+		<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+		<script src="world.js"></script>
+		
+		<!-- code for background color taken from https://www.w3schools.com/tags/tag_body.asp --->
+		
+		<style>
+		
+			body {
+		background-color: #ffffe6;
+	}
+		
+		.sbutton1 {
+		background-color: #e6b800;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	.sbutton2 {
+		background-color: #ffd11a;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	.sbutton3 {
+		background-color: #ffdb4d;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	.sbutton4 {
+		background-color: #ffe680;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+</style>
+	</head>
+	
+	<body>
+	
+	<h1 style='text-align: center'> Core waste generation and Management Statistics of Australia 2016-17</h1>
+	
+		
+		<button class="sbutton1" onclick="window.location.href='index.html';">Home</button>
+		<button class="sbutton2" onclick="window.location.href='overall.html';">Core Waste </button>
+		<button class="sbutton3" onclick="window.location.href='fw.html';">Food Waste</button>
+		<button class="sbutton4" onclick="window.location.href='ow.html';">Organic Waste</button>
+		
+	 <!-- code for menu buttons and styling taken from https://www.w3schools.com/css/css3_buttons.asp  -->
+		
+		
+		
+		<p id="chart1">
+		
+		<p style='text-align: center'>
+		
+			The following graphic contains the details of core waste management statistics of individual states. The waste had been processed using three management methods.
+			<ol>
+				<li>Recycling</li>
+				<li>Energy recovery</li>
+				<li>Disposal</li>
+			</ol>	
+			
+			Click on each state/territory on the map and it will filter the relevant statistics specific for the selected state/territory.
+		</p>
+		
+		<div class='tableauPlaceholder' id='viz1591269686929' style='position: relative; margin: auto;'>
+		<noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pr&#47;project_15910096890420&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript>
+		<object class='tableauViz'  style='display:none;'>
+		<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+		<param name='embed_code_version' value='3' /> 
+		<param name='site_root' value='' />
+		<param name='name' value='project_15910096890420&#47;Dashboard1' />
+		<param name='tabs' value='no' />
+		<param name='toolbar' value='yes' />
+		<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pr&#47;project_15910096890420&#47;Dashboard1&#47;1.png' />
+		<param name='animate_transition' value='yes' />
+		<param name='display_static_image' value='yes' />
+		<param name='display_spinner' value='yes' />
+		<param name='display_overlay' value='yes' />
+		<param name='display_count' value='yes' />
+		</object>
+		</div>                
+		
+		
+		<script type='text/javascript'>                    
+		var divElement = document.getElementById('viz1591269686929');                   
+		var vizElement = divElement.getElementsByTagName('object')[0];                   
+		if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='827px';} 
+		else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='827px';} 
+		else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
+		var scriptElement = document.createElement('script');                    
+		scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                   
+		vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+
+		</script>
+			
+		</p>
+		
+		<h3 style='text-align: center'>Generation and Management of Core waste + Ash grouped by material categories</h3>
+		<p id='para2' style='text-align: center'>
+		Each bubble represents the total amount of waste generated in each material category.
+		Click on bubbles to filter the data related to management of core waste that belongs to different material categories.
+		
+		<div class='tableauPlaceholder' id='viz1591624760020' style='position: relative; margin: auto;'>
+		<noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book4_15916244060500&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript>
+		<object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+		<param name='embed_code_version' value='3' />
+		<param name='site_root' value='' />
+		<param name='name' value='Book4_15916244060500&#47;Dashboard1' />
+		<param name='tabs' value='no' />
+		<param name='toolbar' value='yes' />
+		<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book4_15916244060500&#47;Dashboard1&#47;1.png' />
+		<param name='animate_transition' value='yes' />
+		<param name='display_static_image' value='yes' />
+		<param name='display_spinner' value='yes' />
+		<param name='display_overlay' value='yes' />
+		<param name='display_count' value='yes' />
+		<param name='filter' value='publish=yes' />
+		</object>
+		</div>                
+		
+		<script type='text/javascript'>                    
+		var divElement = document.getElementById('viz1591624760020');                    
+		var vizElement = divElement.getElementsByTagName('object')[0];                   
+		if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='827px';} 
+		else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='827px';} 
+		else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
+		var scriptElement = document.createElement('script');                    
+		scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+		vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+
+		</script>
+		
+		</p>
+	<p>
+	Back to <button class="sbutton5" onclick="window.location.href='index.html';">Home</button> | Next Page <button class="sbutton5" onclick="window.location.href='fw.html';">Food Waste</button>
+	</p>
+	<footer>Swinburne University 2020 Semester 01 COS30045 Data Visualisation Project Praveen Waragoda 101243288</footer>
+	</body>
+
+</html>	

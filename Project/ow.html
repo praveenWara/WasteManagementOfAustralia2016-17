@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="description"	content="Data Visualisation Project"/>
+		<meta name="Keywords"		content="HTML, CSS, D3"/>
+		<meta name="author"			content="Praveen Waragoda 101243288"/>
+		
+		
+		<title> Waste Generation and Management Statistics of Australia 2016-17</title>
+		
+		<link rel="stylesheet" type="text/css" href="world.css">
+		<script src="https://d3js.org/d3.v4.js"></script>
+		<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+		<script src="world.js"></script>
+		<!-- code for background color taken from https://www.w3schools.com/tags/tag_body.asp --->
+		<style> 
+		
+			body {
+		background-color: #ffffe6;
+	}
+		
+		.sbutton1 {
+		background-color: #734d26;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	.sbutton2 {
+		background-color: #ac7339;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	.sbutton3 {
+		background-color: #c68c53;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	.sbutton4 {
+		background-color: #d2a679;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+</style>
+	</head>
+	
+	<body>
+	
+	<h1 style='text-align: center'> Organic Waste Generation and Management Statistics of Australia 2016-17</h1>
+	
+		<button class="sbutton1" onclick="window.location.href='index.html';">Home</button>
+		<button class="sbutton2" onclick="window.location.href='overall.html';">Core Waste</button>
+		<button class="sbutton3" onclick="window.location.href='fw.html';">Food Waste</button>
+		<button class="sbutton4" onclick="window.location.href='ow.html';">Organic Waste</button>
+		<!-- code for menu buttons and styling taken from https://www.w3schools.com/css/css3_buttons.asp  -->
+	
+	<p> 
+	
+	Australia produced 30 million tonnes of organic waste in the year of 2016-17. The waste predominatly can be catagorised into following streams,
+		<ol>
+			<li>C&I (agriculture & fisheries) </li>
+			<li>C&I (core) </li>
+			<li>C&D </li>
+			<li>MSW  </li>
+		</ol>
+	Following charts contain a break down of the organic waste generation by the stream and material catagory.
+	
+	
+	<ul>
+		<li> C&D - Construction and Demolition</li>
+		<li> C&I - Commercial and Industrial </li>
+		<li> MSW - Municipal Solid Waste </li>
+	
+	</ul>
+	
+	</p>
+	
+		
+	<p id="g1">	
+	<div class='tableauPlaceholder' id='viz1591457941912' style='position: relative'>
+	<noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pr&#47;project_15910096890420&#47;Sheet3&#47;1_rss.png' style='border: none' /></a></noscript>
+	<object class='tableauViz'  style='display:none;'>
+	<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+	<param name='embed_code_version' value='3' /> 
+	<param name='site_root' value='' />
+	<param name='name' value='project_15910096890420&#47;Sheet3' />
+	<param name='tabs' value='no' /><param name='toolbar' value='yes' />
+	<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pr&#47;project_15910096890420&#47;Sheet3&#47;1.png' /> 
+	<param name='animate_transition' value='yes' />
+	<param name='display_static_image' value='yes' />
+	<param name='display_spinner' value='yes' />
+	<param name='display_overlay' value='yes' />
+	<param name='display_count' value='yes' />
+	</object>
+	</div>                
+	
+	<script type='text/javascript'>                    
+	var divElement = document.getElementById('viz1591457941912');                    
+	var vizElement = divElement.getElementsByTagName('object')[0];                    
+	if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+	else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+	else { vizElement.style.width='100%';vizElement.style.height='727px';}                     
+	var scriptElement = document.createElement('script');                   
+	scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+	vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+	</script>
+	</p>
+	
+	<p id="g2">
+	
+	<div class='tableauPlaceholder' id='viz1591697901295' style='position: relative'>
+	<noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book5_15916978520610&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript>
+	<object class='tableauViz'  style='display:none;'>
+	<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+	<param name='embed_code_version' value='3' /> 
+	<param name='site_root' value='' />
+	<param name='name' value='Book5_15916978520610&#47;Dashboard1' />
+	<param name='tabs' value='no' />
+	<param name='toolbar' value='yes' />
+	<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book5_15916978520610&#47;Dashboard1&#47;1.png' /> 
+	<param name='animate_transition' value='yes' />
+	<param name='display_static_image' value='yes' />
+	<param name='display_spinner' value='yes' />
+	<param name='display_overlay' value='yes' />
+	<param name='display_count' value='yes' />
+	</object>
+	</div>                
+	
+	<script type='text/javascript'>                   
+	var divElement = document.getElementById('viz1591697901295');                    
+	var vizElement = divElement.getElementsByTagName('object')[0];                   
+	vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+	var scriptElement = document.createElement('script');                    
+	scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+	vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+	</script>	
+	
+	</p>
+	
+	
+	<p>
+	Back to <button class="sbutton5" onclick="window.location.href='index.html';">Home</button> | Previous Page <button class="sbutton6" onclick="window.location.href='fw.html';">Food Waste</button>
+	</p>
+	
+	<footer>Swinburne University 2020 Semester 01 COS30045 Data Visualisation Project Praveen Waragoda 101243288</footer>
+	</body>
+	
+	
+</html>	
